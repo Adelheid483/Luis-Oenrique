@@ -1,0 +1,823 @@
+
+html, body {
+	font-family: 'Asap', sans-serif;
+	font-weight: 400;
+	color: #4d4d4d;
+}
+
+.container {
+	max-width: 1175px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+*:hover {
+	transition: 0.2s ease-out;
+}
+
+
+
+ /* --------- Заголовок ----------- */
+.main_title:before {
+	content: "";
+
+    display: block;
+	width: 60px;
+	height: 4px;
+	background-color: #767676;
+	margin: 0 auto 20px;
+}
+
+
+ /* --------- Кнопка ----------- */
+.main_button a {
+	display: inline-block;
+	text-align: center;
+	
+	padding: 20px 45px;
+	border: 1px solid #4d4d4d;
+	
+	text-decoration: none;
+}
+
+.main_button a:hover {
+	cursor: pointer;
+	
+	border: 1px solid #fff;
+	background-color: #fff;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+ /* --------- Классы шрифтов ----------- */
+.regular_16 {
+	font: 400 16px 'Asap', sans-serif;
+	line-height: calc(26/16);
+	color: #4d4d4d;
+}
+
+.medium_16 { /*кнопки*/
+	font: 500 16px 'Asap', sans-serif;
+	color: #4d4d4d;
+	text-transform: uppercase;
+    letter-spacing: 0.6;
+}
+
+.bold_46 { /*заголовки*/
+	font: 700 46px 'Asap', sans-serif;
+	line-height: calc(49/46);
+	color: rgba(77, 77, 77, .8);
+	text-transform: uppercase;
+	letter-spacing: 12px;
+}
+
+
+/* ....................................................
+
+                SECTION 1 - HEADER
+
+......................................................*/
+
+.header {
+    padding: 30px 0 0 0;
+    
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    
+    background: url("../img/header/bg-element-.png") no-repeat top;
+    background-size: cover;
+}
+
+
+/* оформление меню*/
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    margin-bottom: 175px;
+}
+
+.header_logo p {
+    font: 300 14.15px 'Lato', sans-serif;
+    color: #000;
+}
+
+.header_logo p:last-child {
+    font: 400 3.54px 'Lato', sans-serif;
+    color: #000;
+}
+
+.header_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+    text-transform: uppercase;
+}
+
+.header_menu li{
+    width: 100px;
+}
+
+.header_menu li:nth-of-type(1), 
+.header_menu li:nth-of-type(2){
+    width: 70px;
+}
+
+.header_menu a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.header_menu a:hover {
+    padding-bottom: 9px;
+    border-bottom: 2px solid #4d4d4d;
+    text-transform: capitalize;
+}
+
+
+/*оформление заголовка*/
+.header_content h1 {
+    font-size: 90px;
+    line-height: calc(67/90);
+    color: #4d4d4d;
+}
+
+.header_content h3 {
+    font-size: 22px;
+    line-height: calc(67/22);
+    color: rgba(77, 77, 77, .54);
+}
+
+.header_buttons {
+    display: flex;
+}
+
+.header_buttons .main_button:first-child a {
+    padding: 20px 30px;
+}
+
+.header_buttons .main_button {
+    margin-right: 20px;
+}
+
+
+.header_content {
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    
+    z-index: 2;
+    position: absolute;
+}
+
+.header_img {
+    z-index: 1;
+    position: relative;
+    
+    top: -200px;
+    left: 150px;
+}
+
+/* ....................................................
+
+                SECTION 2 - KNOW MORE ABOUT ME
+
+......................................................*/
+
+.know {
+	padding: 110px 0 125px;
+}
+
+.know_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.know .main_title:before {
+	content: "";
+	
+	display: block;
+	width: 60px;
+	height: 4px;
+	background-color: #767676;
+	margin: 0 0 20px;
+}
+
+
+.know_left {
+	text-align: left;
+	max-width: 480px;
+}
+
+.know_text {
+	margin-bottom: 40px;
+}
+
+.know_right {
+	margin-left: 20px;
+}
+
+.know_right img {
+	width: 100%;
+}
+
+/* ....................................................
+
+                SECTION 3 - SERVICES
+
+......................................................*/
+
+.services {
+	background-color: rgba(246, 246, 246, .8);
+	padding: 120px 0;
+}
+
+.services .main_title {
+	margin-bottom: 60px;
+}
+
+.services_text p {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: calc(49/24);
+}
+
+.services_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	margin: 0 100px;
+}
+
+.services_item {
+	padding-bottom: 50px;
+}
+
+.services_item:last-child {
+	margin-bottom: -50px;
+}
+
+.services_column:first-child 
+.services_item:last-child p {
+	line-height: calc(30/24);
+}
+
+/* ....................................................
+
+                SECTION 4 - MY SKILLS
+
+......................................................*/
+
+.skills {
+	padding: 120px 0;
+}
+
+.skills .main_title {
+	margin-bottom: 60px;
+}
+
+.skills_content {
+	margin: 0 90px;
+}
+
+.skills_content img {
+	width: 100%;
+}
+ 
+
+/* ....................................................
+
+                SECTION 5 - PORTFOLIO
+
+......................................................*/
+
+.portfolio {
+	background-color: rgba(246, 246, 246, .8);
+	padding: 120px 0;
+}
+
+.portfolio .main_title {
+	margin-bottom: 50px;
+}
+
+.portfolio_content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.portfolio_col {
+	width: 33,3%;
+}
+
+.portfolio_col img {
+	margin-bottom: 30px;
+	width: 95%;
+}
+
+.portfolio_col img:hover {
+	cursor: pointer;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+} 
+
+
+/* ....................................................
+
+                SECTION 6 - TESTIMONIALS
+
+......................................................*/
+
+.test {
+	padding: 135px 0 120px;
+}
+
+.test .main_title {
+	margin-bottom: 65px;
+}
+
+.test_content {
+	margin: 0 110px;
+	border: 1px solid rgba(33, 33, 33, .6);
+	padding: 75px 65px 45px 125px;
+}
+
+.test_human {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+
+.test_human_photo img {
+	width: 160px;
+	height: 160px;
+}
+
+.test_human_photo {
+	margin-right: 30px;
+}
+
+.test_human_profile {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.test_human_profile_name h3 {
+	font-weight: 500;
+	font-size: 30px;
+	color: rgba(33, 33, 33, 0.9);
+	text-transform: uppercase;
+}
+
+.test_human_profile_name p {
+	font-size: 12px;
+	font-style: italic;
+	color: rgba(33, 33, 33, 0.9);
+	text-transform: uppercase;
+}
+
+.test_human_profile_text .regular_16 {
+	color: rgba(33, 33, 33, .6);
+	text-transform: uppercase;
+}
+
+.test_slider {
+	display: flex;
+	justify-content: center;
+}
+
+.test_slider_item {
+	border: 1px solid rgba(33, 33, 33, .6);
+	width: 13px;
+	height: 13px;
+	margin: 0 2px;
+}
+
+.test_slider_item:hover {
+	background-color: rgba(33, 33, 33, .6);
+	border: 1px solid rgba(33, 33, 33, -.6);
+	cursor: pointer;
+}
+
+/* ....................................................
+
+                SECTION 7 - STATISTICS
+
+......................................................*/
+.statistics {
+	background-color: rgba(246, 246, 246, .8);
+	padding: 75px 0 65px;
+	margin-bottom: 155px;
+}
+
+.statistics_content {
+	margin: 0 50px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.statistics_col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.statistics_col img {
+	width: auto;
+	margin-bottom: 35px;
+}
+
+.statistics_col p, span {
+	color: rgba(33, 33, 33, .8);
+	font-weight: 400;
+	font-size: 22px;
+	line-height: calc(32/22);
+}
+
+.statistics_col span {
+	font-weight: 500;
+}
+
+
+/* ....................................................
+
+                SECTION 8 - SAY HELLO
+
+......................................................*/
+
+.hello {
+	background: url("../img/photos/hello.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	
+	padding: 145px 0 40px;
+	
+	position: relative;
+	z-index: 0;
+}
+
+.hello:before {
+	content: "";
+	
+	background-color: rgba(33, 33, 33, .7);
+	top: 0; bottom: 0; left: 0; right: 0;
+	
+	position: absolute;
+	z-index: 1;
+}
+
+.hello_content {
+	position: relative;
+	z-index: 2;
+	margin: 0 auto;
+}
+
+.hello .main_title h2{
+	color: rgba(255, 255, 255, .9);
+}
+
+.hello .main_title:before {
+	content: "";
+	
+	display: block;
+	width: 60px;
+	height: 4px;
+	background-color: #c1c1c1;
+	margin: 0 auto 20px;
+}
+
+.hello .main_title {
+	margin-bottom: 70px;
+}
+
+
+
+/* оформление формы */
+form {
+	margin: 0 200px;
+}
+
+form input {
+	padding: 24px 0 22px 10px;
+	border: none;
+	width: 47%;
+	margin-bottom: 30px;
+/*	background-color: rgba(255, 255, 255, .8);*/
+	background-color: #fff;
+}
+
+form textarea {
+	border: none;
+	resize: none;
+	padding: 24px 0 0 10px;
+/*	background-color: rgba(255, 255, 255, .8);*/
+	background-color: #fff;
+	
+	width: 99%;
+	height: 210px;
+	margin-bottom: 30px;
+}
+
+form input::placeholder {
+	font: 400 16px 'Asap', sans-serif;
+	line-height: calc(67/16);
+	color: rgba(33, 33, 33, .8);
+	letter-spacing: 1.5px;
+}
+
+form textarea::placeholder {
+	font: 400 16px 'Asap', sans-serif;
+	line-height: 1;
+	color: rgba(33, 33, 33, .8);
+	letter-spacing: 1.5px;
+}
+
+.hello_form input, textarea {
+	font: 400 16px 'Asap', sans-serif;
+	line-height: calc(26/16);
+	color: #4d4d4d;
+	font-style: italic;
+}
+
+
+
+/* расположение формы */
+.hello_form {
+	display: flex;
+	flex-direction: column;
+}
+
+.hello_inputs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+/* оформление кнопки */
+
+button {
+	padding: 15px 28px;
+/*	background-color: rgba(255, 255, 255, .8);*/
+	background-color: #fff;
+	border: none;
+	line-height: 1;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+}
+
+
+.form_content {
+	padding-bottom: 60px;
+	border-bottom: 1px solid rgba(255, 255, 255, .8);
+	margin-bottom: 30px;
+}
+
+
+/* оформление копирайта и иконок */
+.hello_footer {
+	display: flex;
+	align-items: center;
+}
+
+.hello_icons a{
+	font-size: 17px;
+	color: rgba(77, 77, 77, .8);
+/*	width: 27px; height: 27px;*/
+	background: rgba(255, 255, 255, .8); 
+  	padding: 5px 5px; 
+	
+	margin: 5px;
+}
+
+.hello_icons a:hover {
+	background: rgba(0, 132, 180, .8);
+	color: rgba(255, 255, 255, .8);
+}
+
+.hello_icons {
+	width: 20%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hello_copyright p {
+	font: 400 16px 'Montserrat', sans-serif;
+	line-height: calc(67/16);
+	color: #fff;
+}
+
+.hello_copyright {
+	width: 60%;
+	text-align: center;
+}
+
+.hello_empty {
+	width: 20%;
+}
+
+
+/* кнопка наверх */
+.back_up {
+	background: #fff;
+    
+	display: inline-block;
+    
+	position: fixed;
+	z-index: 10;
+	right: 30px;
+	bottom: 190px;
+}
+
+.back_up:hover {
+    cursor: pointer;
+}
+
+.back_up i {
+    font-size: 24px;
+    padding: 16px;
+}
+
+.back_up a {
+    color: #4d4d4d;
+}   
+
+
+/* ....................................................
+
+                M E D I A
+
+......................................................*/
+
+
+
+@media (max-width: 720px) {
+	
+	.container {
+		width: 100%;
+	}
+	
+	.bold_46 {
+		font-size: 38px;
+		letter-spacing: normal;
+	}
+	
+	/* SECTION 1  */
+	.header_top {
+		margin-bottom: 50px;
+	}
+	
+	.header_content h1{
+		font-size: 60px;
+	}
+	
+	.header_content h3{
+		font-size: 20px;
+	}
+	 
+	.header_content .main_button {
+		flex-wrap: wrap;
+	}
+	
+	
+	/* SECTION 2  */
+	.know_content {
+		flex-wrap: wrap;
+	}
+	
+	.know_left {
+		margin: 0 auto 50px;
+		text-align: center;
+	}
+	
+	.know .main_title:before {
+		content: "";
+		margin: 0 auto 20px;
+	}
+	
+	.know_right {
+		margin: auto;
+		width: 80%;
+	}
+	
+	
+	
+	/* SECTION 3  */
+	.services_content {
+		margin: 0 20px;
+	}
+	
+	.services_item p {
+		font-size: 20px;
+	}
+	
+	
+	
+	/* SECTION 4  */
+	.skills_content {
+		margin: 0 20px;
+	}
+	
+	/* SECTION 5  */
+	.portfolio_content {
+		flex-wrap: wrap;
+		margin: 0 20px;
+	}
+	
+	.portfolio_col  {
+		width: 50%;
+		margin: auto;
+	}
+	
+	.portfolio_col:last-child  {
+		width: 100%;
+	}
+	
+	
+	
+	/* SECTION 6  */
+	.test_human {
+		flex-wrap: wrap;
+	}
+	
+	.test_human_photo, .test_human_profile_name, .test_human {
+		margin-bottom: 30px;
+	}
+	
+	.test_content {
+		margin: 0 50px;
+		padding: 20px 50px;
+	}
+
+	
+	/* SECTION 7  */
+	.statistics_content {
+		margin: 0 20px;
+	}
+	
+	.statistics_col p {
+		font-size: 18px;
+	}
+	
+	.statistics {
+	margin-bottom: 80px;
+	}
+	
+	/* SECTION 8  */
+	form {
+	margin: 0 80px;
+	}
+	
+	form input {
+		width: 100%;
+	}
+	
+	.hello_icons, hello_empty {
+		width: 30%;
+	}
+	
+	.hello_copyright {
+		width: 60%;
+	}
+	
+	.hello_copyright p {	
+	line-height: 1.5;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
